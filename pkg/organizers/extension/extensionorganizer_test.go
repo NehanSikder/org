@@ -26,7 +26,7 @@ func TestNew(t *testing.T) {
 
 func createExpectedFileList(testFs fstest.MapFS) ([]fs.DirEntry, error) {
 	fileList := []fs.DirEntry{}
-	for k, _ := range testFs {
+	for k := range testFs {
 		fi, err := fs.Stat(testFs, k)
 		if err != nil {
 			return nil, err
