@@ -48,7 +48,6 @@ func showSimulation(workdingDir string, newFileFolderMapping map[string]string) 
 
 		}
 	}
-	return false, nil
 }
 
 func main() {
